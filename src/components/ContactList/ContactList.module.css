@@ -1,0 +1,18 @@
+.constactList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 10px;
+}
+
+.contactItem {
+  border: 2px solid rgb(31, 164, 253);
+  width: 320px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0 10px;
+  margin-bottom: 16px;
+}
