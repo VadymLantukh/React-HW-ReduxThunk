@@ -2,7 +2,7 @@ import { RiContactsFill } from 'react-icons/ri';
 import { MdCall } from 'react-icons/md';
 import css from './Contact.module.css';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from '../../redux/contactsSlice';
+import { deleteContactsThunk } from '../../redux/contactsOps';
 
 const Contact = ({ name, number, id }) => {
   const dispatch = useDispatch();
@@ -24,7 +24,7 @@ const Contact = ({ name, number, id }) => {
       <button
         className={css.btnDeleteItem}
         type="button"
-        onClick={() => dispatch(deleteContact(id))}
+        onClick={() => dispatch(deleteContactsThunk(id))}
       >
         Delete
       </button>

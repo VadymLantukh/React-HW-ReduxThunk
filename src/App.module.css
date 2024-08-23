@@ -11,3 +11,15 @@
   justify-content: center;
   margin-bottom: 10px;
 }
+
+.loading {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  color: rgb(192, 4, 4);
+  font-size: 24px;
+}
